@@ -38,11 +38,11 @@ class TestUserData(unittest.TestCase):
         # and the first name is still a male first name
         self.assertTrue(user.is_male())
         # given a user with a female first name
-        user.first_name = "Jeanine"
+        user.first_name = "Marie"
         # when getting the new first name
         user.first_name = user.get_new_first_name()
         # Then the new first name is different from the old one
-        self.assertNotEqual("Jeanne", user.first_name)
+        self.assertNotEqual("Marie", user.first_name)
         # and the first name is still a female first name
         self.assertTrue(user.is_female())
 
