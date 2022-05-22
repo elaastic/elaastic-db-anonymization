@@ -2,3 +2,9 @@ dump-original
 archive
 .DS_Store
 .vscode
+dist
+*.egg-info
+
+# intellij Idea
+.idea
+*.iml
