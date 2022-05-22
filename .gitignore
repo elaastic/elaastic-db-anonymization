@@ -4,6 +4,7 @@ archive
 .vscode
 dist
 *.egg-info
+build
 
 # intellij Idea
 .idea
