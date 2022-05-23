@@ -46,5 +46,13 @@ class TestUserData(unittest.TestCase):
         # and the first name is still a female first name
         self.assertTrue(user.is_female())
 
+    def test_get_new_last_name(self):
+        user = UserData()
+        # Getting the new last name
+        user.last_name = user.get_new_last_name()
+        # then wa have a new last name
+        self.assertIsNotNone(user.last_name)
+
+
 if __name__ == '__main__':
     unittest.main()

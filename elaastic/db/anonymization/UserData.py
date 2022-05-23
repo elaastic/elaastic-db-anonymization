@@ -23,18 +23,19 @@ class UserData:
         return self.faked_name_generator.first_name()
 
     def get_new_last_name(self) -> str:
-        # TODO implement and test
-        return ''
+        # TODO test
+        return self.faked_name_generator.last_name()
 
-    def get_new_email(self) -> str:
-        # TODO implement and test
-        return ''
 
     def get_new_username(self) -> str:
         # TODO implement and test
         return ''
 
     def get_new_normalized_username(self) -> str:
+        # TODO implement and test
+        return ''
+
+    def get_new_email(self) -> str:
         # TODO implement and test
         return ''
 
