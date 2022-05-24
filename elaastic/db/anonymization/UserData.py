@@ -23,7 +23,6 @@ class UserData:
         return self.faked_name_generator.first_name()
 
     def get_new_last_name(self) -> str:
-        # TODO test
         return self.faked_name_generator.last_name()
 
 

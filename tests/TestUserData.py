@@ -47,11 +47,16 @@ class TestUserData(unittest.TestCase):
         self.assertTrue(user.is_female())
 
     def test_get_new_last_name(self):
+        # Given a user with a last_name
         user = UserData()
-        # Getting the new last name
+        initial_last_name = "Durand"
+        user.last_name = initial_last_name
+        self.assertEqual(user.last_name, initial_last_name)
+        # When getting the new last name
         user.last_name = user.get_new_last_name()
-        # then wa have a new last name
+        # then we have a new last name different from the initial one
         self.assertIsNotNone(user.last_name)
+        self.assertNotEqual(user.last_name, initial_last_name)
 
 
 if __name__ == '__main__':
